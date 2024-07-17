@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for navbar */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.logo img {
+    width: 120px; /* Adjust logo size as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff6200ee; /* Change color on hover */
+}
+
+
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6200ee;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about-section, .menu-section, .booking-section, .gallery-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 30%;
+    padding: 10px;
+}
+
+.booking-section {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 60px 20px; /* Adjust padding as needed */
+}
+
+.booking-content {
+    display: flex; /* Flexbox for content alignment */
+    width: 100%; /* Full width */
+}
+
+.booking-form {
+    flex: 1; /* Take up available space */
+    margin-right: 20px; /* Space between form and image */
+}
+
+.booking-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+
+.booking-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-section label {
+    margin-top: 10px;
+}
+
+.booking-section input, .booking-section button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.social-media {
+    margin-top: 20px; /* Space above the icons */
+}
+
+.social-media a {
+    color: white; /* Set icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Adjust icon size */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.social-media a:hover {
+    color: #ff6200ee; /* Change color on hover */
+}
+
+
+.social-media a {
+    margin: 0 10px;
+}
+.contact-section {
+    background-color: #000; /* Set background color to black */
+    color: white; /* Set text color to white for contrast */
+    padding: 60px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center text */
+}
+
+.contact-section a {
+    color: #ff6200ee; /* Change link color for visibility */
+    text-decoration: underline; /* Optional: underline links */
+}
+
+
+footer {
+    background-color: #000; /* Set footer background color to black */
+    color: white; /* Set text color to white for contrast */
+    text-align: center;
+    padding: 20px 0;
+}
+
